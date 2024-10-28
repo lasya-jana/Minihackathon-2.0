@@ -1,0 +1,53 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+.scoreboard {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #e8f4fc;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    padding: 12px 25px;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.question {
+    margin-top: 25px;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+}

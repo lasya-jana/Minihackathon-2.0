@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title >Two-Player Trivia Battle Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Two-Player Trivia Battle Game</h1>
+      <div id="player-setup">
+        <h2>Enter Players Names</h2>
+        <label for="player1">Player 1: </label>
+        <input type="text" id="player1" required /><br /><br />
+        <label for="player2">Player 2: </label>
+        <input type="text" id="player2" required /><br /><br />
+        <button id="start-game">Start Game</button>
+      </div>
+
+      <div id="category-selection" class="hidden">
+        <h2>Select a Category</h2>
+        <select id="category-list"></select>
+        <button id="select-category">Select Category</button>
+        <button id="end-game">End Game</button>
+      </div>
+
+      <div id="current-turn" class="hidden">
+        <h3>It's <span id="current-player-name"></span>'s turn!</h3>
+      </div>
+
+      <div id="question-section" class="hidden">
+        <h2 id="question-text"></h2>
+        <div id="answer-options"></div>
+      </div>
+
+      <div id="results" class="hidden">
+        <h2>Game Over</h2>
+        <p id="winner"></p>
+        <button id="restart-game">Play Again</button>
+      </div>
+
+      <div class="scoreboard hidden" id="scoreboard">
+        <h3>Scores</h3>
+        <p id="score-player1"></p>
+        <p id="score-player2"></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
